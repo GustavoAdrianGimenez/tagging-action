@@ -1,0 +1,10 @@
+name: 'TaggingWorkflow'
+description: 'Generate tags'
+outputs:
+  new_tag:
+    description: 'Generated tag'
+  pre_release:
+    description: 'Whether it is a release candidate'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
