@@ -10111,7 +10111,7 @@ function run() {
                 core.warning('PR not found');
                 return;
             }
-            if (pr.base.ref !== 'master') {
+            if (pr.base.ref !== 'master' && pr.base.ref !== 'main') {
                 core.info('PR not to master, skipping');
                 return;
             }
